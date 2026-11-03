@@ -1,8 +1,8 @@
 class Loudstation < Formula
   desc "Detect and fix silent monitor speakers on Apple Silicon Macs"
   homepage "https://github.com/juanjsebgarcia/loudstation"
-  url "https://github.com/juanjsebgarcia/loudstation/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "ecfdfcd48cdc7e44bab5162bfacd5b1268037619042b091adfb9fea1d78f3244"
+  url "https://github.com/juanjsebgarcia/loudstation/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "2bb2da1e0ed8ccafe8ec226cb22fc4f3c73473beed43b5081c3ff3379373bd61"
   license "MIT"
 
   # The fault and the fix are specific to Apple Silicon's DCP display coprocessors.
@@ -21,6 +21,8 @@ class Loudstation < Formula
         loudstation app
       On first run it asks whether to fix your monitor speakers automatically. A fix
       switches that display off and on, so it goes black for about 3 seconds.
+
+      After `brew upgrade`, run `loudstation app` again to switch to the new version.
 
       After `brew uninstall` the login item does nothing. To remove it as well:
         launchctl bootout gui/$(id -u)/io.github.juanjsebgarcia.loudstation
