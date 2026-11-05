@@ -1,8 +1,8 @@
 class Loudstation < Formula
   desc "Fix silent HDMI/DisplayPort monitor audio on Apple Silicon Macs"
   homepage "https://github.com/juanjsebgarcia/loudstation"
-  url "https://github.com/juanjsebgarcia/loudstation/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "2bb2da1e0ed8ccafe8ec226cb22fc4f3c73473beed43b5081c3ff3379373bd61"
+  url "https://github.com/juanjsebgarcia/loudstation/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "9003a5715b375030fa0b713ddfe2b5987d2eb8e69634a087c3083df5d3c4282e"
   license "MIT"
 
   # The fault and the fix are specific to Apple Silicon's DCP display coprocessors.
